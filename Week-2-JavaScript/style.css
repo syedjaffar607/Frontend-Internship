@@ -1,0 +1,153 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: #f4f5ff;
+  background: #0b1020;
+}
+
+.container {
+  width: 100%;
+  max-width: 560px;
+  padding: 32px;
+  background: #151b2e;
+  border: 1px solid #303951;
+  border-radius: 18px;
+}
+
+.tag {
+  color: #a99cff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 36px;
+}
+
+.subtitle,
+.hint {
+  color: #aab3c8;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #3a4560;
+  border-radius: 8px;
+  background: #0b1020;
+  color: white;
+}
+
+button {
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #8b7cff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7563f5;
+}
+
+#message {
+  color: #c5bcff;
+  font-size: 14px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #303951;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+li span {
+  flex: 1;
+}
+
+li.completed span {
+  color: #8993aa;
+  text-decoration: line-through;
+}
+
+li button {
+  padding: 8px 10px;
+}
+
+.hint {
+  margin-top: 24px;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
+
+
+.api-section {
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px solid #303951;
+}
+
+.api-section h2 {
+  margin-bottom: 18px;
+}
+
+#posts article {
+  margin-top: 14px;
+  padding: 16px;
+  background: #0b1020;
+  border: 1px solid #303951;
+  border-radius: 10px;
+}
+
+#posts h3 {
+  color: #b7adff;
+  text-transform: capitalize;
+}
+
+#posts p {
+  color: #aab3c8;
+  overflow-wrap: anywhere;
+}
